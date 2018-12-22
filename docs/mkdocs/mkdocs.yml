@@ -1,10 +1,13 @@
-site_name: AP Computer Science A
-theme: readthedocs
-pages:
+site_name: AP Computer Science A Textbook
+site_description: A Java textbook for the AP Computer Science A course
+site_author: Mason Egger
+site_url: https://zelgius.github.io/ap-cs-a-textbook-java/
+repo_name: Zelgius/ap-cs-a-textbook-java
+repo_url: https://github.com/Zelgius/ap-cs-a-textbook-java
+theme:
+    name: readthedocs
+nav:
     - Home: index.md
-    - Basic Markdown: mkdocs-examples/index.md
-    - Markdown Addons: mkdocs-examples/addons.md
-    - Example UML Markdown: mkdocs-examples/uml.md
 markdown_extensions:
     - pymdownx.superfences
     - pymdownx.progressbar
