@@ -6,6 +6,7 @@ repo_name: UnlockedEdu/ap-cs-a-textbook-java
 repo_url: https://github.com/UnlockedEdu/ap-cs-a-textbook-java
 theme:
     name: readthedocs
+    custom_dir: custom_theme/
 nav:
     - Home: index.md
     - Dedication: dedication/index.md
@@ -29,6 +30,7 @@ nav:
     - Chapter 16 - Interfaces and Abstract Classes: chapter-16/index.md
     - Chapter 17 - More Sorting and Searching: chapter-17/index.md
     - Chapter 18 - Recursion: chapter-18/index.md
+    - License: license/index.md
 markdown_extensions:
     - pymdownx.superfences
     - pymdownx.progressbar
