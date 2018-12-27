@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Java textbook for the AP Computer Science A course">
+  <meta name="author" content="Mason Egger">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Home - AP Computer Science A Textbook</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="css/progress_bar.css" rel="stylesheet">
+  <link href="css/details.css" rel="stylesheet">
+  <link href="css/tasklist.css" rel="stylesheet">
+  <link href="css/custom_tasklist.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/ap-cs-a-textbook-java/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> AP Computer Science A Textbook</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#documentation-pipelines-for-publishing-to-github-pages">Documentation Pipelines for Publishing to Github Pages.</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#why-do-we-need-this">Why do we need this?</a></li>
+        
+            <li><a class="toctree-l3" href="#why-not-just-use-a-wiki-or-other-internal-documentation-tool">Why not just use a wiki or other internal documentation tool?</a></li>
+        
+            <li><a class="toctree-l3" href="#setup-and-usage">Setup and Usage</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">AP Computer Science A Textbook</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Zelgius/ap-cs-a-textbook-java/edit/master/docs/index.md"> Edit on Zelgius/ap-cs-a-textbook-java</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="documentation-pipelines-for-publishing-to-github-pages">Documentation Pipelines for Publishing to Github Pages.</h1>
+<p>This is a cloneable pipeline and toolset for setting up an <code>mkdocs</code> or <code>sphinx</code>
+based documentation site. Both tools are supported and it's simple changes
+in the code to switch between the two.</p>
+<h2 id="why-do-we-need-this">Why do we need this?</h2>
+<p>Documentation is a deliverable and should be treated as such. This repo aims
+to be an easy place for anyone to be able to come and pickup a <code>mkdocs</code> or
+<code>sphinx</code> pipeline and easily integrate it into their projects. The pipeline 
+doesn't need to be run via a CICD pipeline. You can build and publish the docs
+with the <code>Makefile</code> targets.</p>
+<h2 id="why-not-just-use-a-wiki-or-other-internal-documentation-tool">Why not just use a wiki or other internal documentation tool?</h2>
+<p>It has been my experience that <em>most</em> developers do not care for writing
+documentation, however are the first to complain when documentation does not
+meet their standards. Using external web based WSIWYG editors with terrible
+seach functionality, terrible user interfaces and a slew of other problems
+only make developers loathe the documentation process more. However, if we 
+keep the documentation as close to the code as possible (literally in the same
+repo) and create an automated process around building and publishing it, developers
+will be way more likely to work on it. Updating the documentation becomes part
+of the development process and can be brought into code reviews.</p>
+<h2 id="setup-and-usage">Setup and Usage</h2>
+<h3 id="required-tools">Required tools</h3>
+<p>Every part of this documentation can be built, tested, and deployed from
+within the <code>Dockerfile</code> included, so the only requirement would be Docker.</p>
+<h3 id="cicd-pipeline">CICD Pipeline</h3>
+<p>In order to facilitate open source workflows I chose to build this part with 
+<a href="https://travis-ci.com/">Travis CI</a>. The <code>.travis.yml</code> file in this repository
+will build the selected type of documents and upload them to the github pages
+associated with the repository. You will have to enable the project on Travis
+for it to start building.</p>
+<h3 id="commands">Commands</h3>
+<p>The top level targets are listed below. The CICD pipeline calls the build
+command to create the documentation then uses the <code>pages</code> deploy provider to 
+upload to GitHub pages. </p>
+<table>
+<thead>
+<tr>
+<th>Make target</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>make build</code></td>
+<td>Build the html files for the documentation.</td>
+</tr>
+<tr>
+<td><code>make run</code></td>
+<td>Run a docker web server on port 8000 to view documenation.</td>
+</tr>
+<tr>
+<td><code>make clean</code></td>
+<td>Clean up output directory where html files are put.</td>
+</tr>
+<tr>
+<td><code>make publish</code></td>
+<td>Publish documentation to ghpages.</td>
+</tr>
+</tbody>
+</table>
+<p>To select a documentation pipeline, simply change what the top level targets
+point to.</p>
+<p><strong>Note</strong> <code>sphinx</code> publishing with the <code>Makefile</code> isn't supported yet. Just
+haven't had time to do it. PRs accepted.</p>
+<p>Example: 
+<pre class="codehilite"><code>build: build-mkdocs
+
+run: run-mkdocs
+
+publish: publish-mkdocs</code></pre></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="js/flowchart-loader.js" defer></script>
+      <script src="js/details.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.8.0/flowchart.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2018-12-27 00:56:32
+-->
