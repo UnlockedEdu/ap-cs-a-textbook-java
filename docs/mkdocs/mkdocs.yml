@@ -1,13 +1,34 @@
-site_name: AP Computer Science A Textbook
+site_name: D202 - AP Computer Science A Textbook
 site_description: A Java textbook for the AP Computer Science A course
-site_author: Mason Egger
-site_url: https://zelgius.github.io/ap-cs-a-textbook-java/
-repo_name: Zelgius/ap-cs-a-textbook-java
-repo_url: https://github.com/Zelgius/ap-cs-a-textbook-java
+site_author: Mason Egger and Cameron Egger
+site_url: https://unlockededu.github.io/ap-cs-a-textbook-java/
+repo_name: UnlockedEdu/ap-cs-a-textbook-java
+repo_url: https://github.com/UnlockedEdu/ap-cs-a-textbook-java
 theme:
     name: readthedocs
 nav:
     - Home: index.md
+    - Dedication: dedication/index.md
+    - About the Authors: authors/index.md
+    - Preface: preface/index.md
+    - Chapter 1 - Introduction: chapter-01/index.md
+    - Chapter 2 - Number Systems: chapter-02/index.md
+    - Chapter 3 - Datatypes: chapter-03/index.md
+    - Chapter 4 - Console IO and Formatting: chapter-04/index.md
+    - Chapter 5 - Introduction to Object Oriented Programming: chapter-05/index.md
+    - Chapter 6 - Conditional Statements: chapter-06/index.md
+    - Chapter 7 - Loops: chapter-07/index.md
+    - Chapter 8 - Boolean Algebra: chapter-08/index.md
+    - Chapter 9 - Nested Loops: chapter-09/index.md
+    - Chapter 10 - File Input: chapter-10/index.md
+    - Chapter 11 - Arrays and 2-Dimensional Arrays: chapter-11/index.md
+    - Chapter 12 - Introduction to Sorting and Searching: chapter-12/index.md
+    - Chapter 13 - ArrayList and Collections: chapter-13/index.md
+    - Chapter 14 - Reference and Parameter Passing: chapter-14/index.md
+    - Chapter 15 - Inheritance: chapter-15/index.md
+    - Chapter 16 - Interfaces and Abstract Classes: chapter-16/index.md
+    - Chapter 17 - More Sorting and Searching: chapter-17/index.md
+    - Chapter 18 - Recursion: chapter-18/index.md
 markdown_extensions:
     - pymdownx.superfences
     - pymdownx.progressbar
