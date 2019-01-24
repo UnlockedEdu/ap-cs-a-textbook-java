@@ -41,7 +41,7 @@ def baseConverter(self, num, x):
 	while num < x:
 		ans = key[num % x] + ans
 		num = num/x
-	return ans
+	return num + ans
 
 #End of Helper Functions
 
