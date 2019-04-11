@@ -5,7 +5,7 @@ site_url: https://unlockededu.github.io/ap-cs-a-textbook-java/
 repo_name: UnlockedEdu/ap-cs-a-textbook-java
 repo_url: https://github.com/UnlockedEdu/ap-cs-a-textbook-java
 theme:
-    name: readthedocs
+    name: material
     custom_dir: custom_theme/
 nav:
     - Home: index.md
